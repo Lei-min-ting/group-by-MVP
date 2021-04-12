@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const GroupBuy = () => {
+const GroupBuy = (props) => {
   return (
     <div
       className="w-auto h-200px
@@ -67,7 +67,8 @@ const GroupBuy = () => {
         </Link>
       </div>
      <div className="flex justify-center items-center">
-     <Link
+     <button
+          onClick={props.openHandler}
           className="bg-gradient-to-r from-green-300 via-green-400 to-green-500
                            py-2
                            px-4
@@ -90,7 +91,7 @@ const GroupBuy = () => {
             />
           </svg>
           launch a Group Buy
-        </Link>
+        </button>
      </div>
        
     </div>
