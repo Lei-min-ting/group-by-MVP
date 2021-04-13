@@ -12,7 +12,7 @@ const GroupBuy = (props) => {
                     "
     >
       <div className="grid grid-cols-3 divide-x ">
-        <Link class="grid justify-items-center">
+        <button type='button' class="grid justify-items-center" onClick={props.OpenJC}>
           <svg
             class="w-6 h-9 "
             fill="none"
@@ -28,9 +28,9 @@ const GroupBuy = (props) => {
             ></path>
           </svg>
           <p className="">Join Community</p>
-        </Link>
+        </button>
 
-        <Link class="grid justify-items-center">
+        <button type='button' class="grid justify-items-center" onClick={props.OpenJRB} >
           <svg
             class="w-6 h-9"
             fill="none"
@@ -46,9 +46,9 @@ const GroupBuy = (props) => {
             ></path>
           </svg>
           <div className="">Join Group Buy</div>
-        </Link>
+        </button>
 
-        <Link class="grid justify-items-center">
+        <button type='button' class="grid justify-items-center" onClick={props.OpenGPBing}>
           <svg
             class="w-6 h-9"
             fill="none"
@@ -64,10 +64,11 @@ const GroupBuy = (props) => {
             ></path>
           </svg>
           <div className="">Group Buying</div>
-        </Link>
+        </button>
       </div>
      <div className="flex justify-center items-center">
      <button
+          type='button'
           onClick={props.openHandler}
           className="bg-gradient-to-r from-green-300 via-green-400 to-green-500
                            py-2
