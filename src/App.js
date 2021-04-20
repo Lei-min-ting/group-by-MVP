@@ -8,6 +8,7 @@ const App=()=> {
   return (
     <div>
       <LaunchGroupBuy/>
+      <h1>hollow world, thhis is a test of github</h1>
     </div>
   );
 }
